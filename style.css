@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.control{
+    position: relative;
+    margin: 1.5rem 0rem;
+    width: 15rem;
+}
+.control input{
+    display: block;
+    padding: 15px 0px;
+    border: 0;
+    border-bottom: 2px solid #b082f5;
+    width: 100%;
+    font-family: inherit;
+    font-size: 15px;
+    transition: 0.2s ease-in-out;
+
+}
+.control input:focus,
+.control input:valid {
+    border-bottom-color: #b082f5;
+    outline: none;
+}
+.control label  {
+    font-size: 15px;
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+.control input:focus + label span,
+.control input:valid + label span{
+    color: #b082f5;
+    transform: translateY(-30px);
+}
+.control label span{
+    display: inline-block;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
